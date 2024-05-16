@@ -28,14 +28,17 @@ const Home = () => {
 
   return (
     <main className={styles.main}>
-      <Grid />
-      <button
-        className={styles.runButton}
-        onClick={onClickRun}
-        disabled={isRunning}
-      >
-        Run
-      </button>
+      <div className={styles.gameContainer}>
+        <Grid />
+
+        <button
+          className={styles.runButton}
+          onClick={onClickRun}
+          disabled={isRunning}
+        >
+          Run
+        </button>
+      </div>
     </main>
   );
 };
